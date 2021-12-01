@@ -361,3 +361,9 @@ The odds ratio is approximately how effective the vaccine is. The odds ratio for
 
 # Conclusions and recommendations
 
+We reject the Null hypothesis because there is a difference in Covid-19 vaccine effectiveness among different subgroups(males,females,Drug users,LGBTQ). Vaccine effectiveness varies between subgroups and each subgroup had a different P-value, thus the discrepancy rate of effectiveness varies differently between subgroups after receiving the vaccine. 
+
+Males vaccinated had 2:1 of contracting Covid-19 after vaccination, thus it is ineffective for males with a p-value of 0.0005801 which is too low. This indicates strong evidence against the null hypothesis, so we reject the null hypothesis. In conclusion males should not take the vaccine because it is ineffective at protecting males against covid-19. 
+
+Females were 1:2 odds of contracting Covid-19 after vaccination with P-value of <2e-16
+
