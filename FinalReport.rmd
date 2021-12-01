@@ -162,7 +162,44 @@ Among the gals, 33% got covid-19 after taking the vaccine, while approximately 6
 The odds of getting covid-19 for women while taking the vaccine is 1:2. the women that took the drug were half as likely to get covid-19(33%) than those taking the placebo(67%)
 
 
-# Females
+### Inferential results 
+
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+galfish <- fisher.test(table1)
+galfish
+```
+
+
+This information is important because among all of these results is the output of the fisher exact test. The p-value displayed above is extremely small at 2e-16. This is an awfully small number. This number means that these results are not likely to occur by chance. 
+
+The null hypothesis predicted that the infection rate related to covid-19 vaccination effectiveness are independent of subgroup. Since it is clear that subgroup does play a role in the Covid infection rate in the vaccinated individuals, The alternative hypothesis is that there is a correlation between covid-19 vaccination effectiveness in subgroups.
+
+The odd ratio above illustrates a ratio of 2.00. the females who recived the vaccine were half as likely to get covid-19 than those who recived the placebo. 
+
+
+
+
+
+```{r}
+effect <- galfish$p.value/(galfish$p.value +1)
+effectivenessgal = galfish$estimate/(galfish$estimate +1)*100
+print(effectivenessgal)
+```
+
+```{r}
+low=(galfish$conf.int[1]/(galfish$conf.int[1] +1))*100
+hi=(galfish$conf.int[2]/(galfish$conf.int[2] +1))*100
+options(digits = 2)
+```
+
+above is the effectiveness for the covid-19 vaccine for females. if the effectiveness is above 50% that means that the vaccine is effective. based on the interval seen above, we can conclude that the vaccine is effective in protecting females from getting covid-19. 
+
+The odds ratio is approximately how effective the vaccine is. The odds ratio for females can be seen above as 67. The effectiveness confidence interval for females is 55.09 to 75.05.
+
+
 
 # Drug Users
 
