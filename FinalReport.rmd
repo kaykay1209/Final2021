@@ -365,5 +365,22 @@ We reject the Null hypothesis because there is a difference in Covid-19 vaccine 
 
 Males vaccinated had 2:1 of contracting Covid-19 after vaccination, thus it is ineffective for males with a p-value of 0.0005801 which is too low. This indicates strong evidence against the null hypothesis, so we reject the null hypothesis. In conclusion males should not take the vaccine because it is ineffective at protecting males against covid-19. 
 
-Females were 1:2 odds of contracting Covid-19 after vaccination with P-value of <2e-16
+Females were 1:2 odds of contracting Covid-19 after vaccination with P-value of <2e-16(0.000000000000002) which is too low, this indicates strong  
+evidence against the null hypothesis, therefore we reject the null
+hypothesis. In conclusion women should take the vaccine as it is
+effective in protecting women from covid-19.
+
+Drug users had 1:2 odds of contracting Covid-19 after vaccination 
+with a p-value of 0.002 which is too low. This indicates strong 
+evidence against the null hypothesis, so we reject the null 
+hypothesis. In conclusion Drug Users should take the vaccine as it
+is effective in protecting Drug users from Covid-19. 
+
+LGBTQ had a 5:3 odds of contracting Covid-19 after vaccination with
+a p-value of 0.00006 which is too low. This indicates strong 
+evidence against the null hypothesis, so we reject the null 
+hypothesis. In conclusion LGBTQ should not get the vaccine as it is 
+ineffective in protecting LGBTQ from covid-19. 
+
+to reiterate it is clear that there is a difference in Covid-19 vaccine effectiveness between different subgroups thus we reject the null hypothesis. The vaccine is effective at fighting covid-19 for women and drug users but ineffective for men and LGBTQ. 
 
